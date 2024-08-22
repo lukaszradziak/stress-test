@@ -25,7 +25,7 @@ services:
       PHP_OPCACHE_ENABLE: "1"
     volumes:
       - ./apps/symfony/:/var/www/html
-    command: 'php -S 0.0.0.0:8000 -t public'
+    command: 'bash -c "composer install && php -S 0.0.0.0:8000 -t public"'
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: always
