@@ -9,7 +9,7 @@ services:
       PHP_OPCACHE_ENABLE: "1"
     volumes:
       - ./apps/laravel/:/var/www/html
-    command: 'bash -c "php artisan migrate --force && php artisan serve --host=0.0.0.0"'
+    command: 'bash -c "composer install && php artisan migrate --force && php artisan serve --host=0.0.0.0"'
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: always
@@ -64,7 +64,7 @@ services:
       PHP_OPCACHE_ENABLE: "1"
     volumes:
       - ./apps/laravel/:/var/www/html
-    command: 'bash -c "php artisan migrate --force && php artisan octane:start --server=frankenphp --host=0.0.0.0 --workers=10 --task-workers=10"'
+    command: 'bash -c "php artisan octane:start --server=frankenphp --host=0.0.0.0 --workers=10 --task-workers=10"'
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: always
