@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/apps/laravel/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/apps/symfony/src" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/apps/symfony/tests" isTestSource="true" packagePrefix="App\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/laravel/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/brianium/paratest" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/carbonphp/carbon-doctrine-types" />
@@ -370,6 +371,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/ta-tikoma/phpunit-architecture-test" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/laravel/vendor/laminas/laminas-diactoros" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/laravel/vendor/laravel/octane" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/laravel/vendor/symfony/psr-http-message-bridge" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

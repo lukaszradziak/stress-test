@@ -370,6 +370,9 @@
       <path value="$PROJECT_DIR$/apps/symfony/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/apps/symfony/vendor/symfony/runtime" />
       <path value="$PROJECT_DIR$/apps/symfony/vendor/composer" />
+      <path value="$PROJECT_DIR$/apps/laravel/vendor/laravel/octane" />
+      <path value="$PROJECT_DIR$/apps/laravel/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/apps/laravel/vendor/laminas/laminas-diactoros" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
