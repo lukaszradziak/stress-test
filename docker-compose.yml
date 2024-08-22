@@ -12,6 +12,18 @@ services:
     command: 'php artisan serve --host=0.0.0.0'
     extra_hosts:
       - "host.docker.internal:host-gateway"
+  symfony:
+    image: serversideup/php:8.3-fpm-nginx
+    ports:
+      - "8001:8000"
+    environment:
+      SSL_MODE: "off"
+      PHP_OPCACHE_ENABLE: "1"
+    volumes:
+      - ./apps/symfony/:/var/www/html
+    command: 'php -S 0.0.0.0:8000 -t public'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 #  laravel-octane:
 #    image: serversideup/php:8.3-fpm-nginx
 #    ports:
