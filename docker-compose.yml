@@ -12,6 +12,7 @@ services:
     command: 'php artisan serve --host=0.0.0.0'
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    restart: always
   symfony:
     image: serversideup/php:8.3-fpm-nginx
     ports:
@@ -24,6 +25,7 @@ services:
     command: 'php -S 0.0.0.0:8000 -t public'
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    restart: always
   express:
     image: "node:20"
     working_dir: /home/node/app
@@ -34,6 +36,7 @@ services:
     volumes:
       - ./apps/express/:/home/node/app
     command: 'bash -c "npm install && npm run start"'
+    restart: always
   nest:
     image: "node:20"
     working_dir: /home/node/app
@@ -44,6 +47,7 @@ services:
     volumes:
       - ./apps/nest/:/home/node/app
     command: 'bash -c "npm install && npm run build && npm run start:prod"'
+    restart: always
   laravel-octane:
     image: serversideup/php:8.3-fpm-nginx
     ports:
@@ -54,7 +58,7 @@ services:
     volumes:
       - ./apps/laravel/:/var/www/html
     command: 'php artisan octane:start --server=frankenphp --host=0.0.0.0 --workers=10 --task-workers=10'
-
+    restart: always
   mysql:
     image: 'mysql/mysql-server:8.0'
     environment:
@@ -64,3 +68,4 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
     volumes:
       - ./db:/var/lib/mysql:rw
+    restart: always

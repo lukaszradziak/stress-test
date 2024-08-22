@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/laravel/tests" />
         <option value="$PROJECT_DIR$/apps/laravel/tests" />
+        <option value="$PROJECT_DIR$/apps/symfony/tests" />
       </list>
     </option>
   </component>

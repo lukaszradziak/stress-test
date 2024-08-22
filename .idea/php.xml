@@ -373,6 +373,10 @@
       <path value="$PROJECT_DIR$/apps/laravel/vendor/laravel/octane" />
       <path value="$PROJECT_DIR$/apps/laravel/vendor/symfony/psr-http-message-bridge" />
       <path value="$PROJECT_DIR$/apps/laravel/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/apps/symfony/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/apps/symfony/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/apps/symfony/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/apps/symfony/vendor/nikic/php-parser" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
@@ -382,6 +386,7 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/apps/laravel/phpunit.xml" custom_loader_path="$PROJECT_DIR$/apps/laravel/vendor/autoload.php" paratest_path="$PROJECT_DIR$/vendor/bin/paratest_for_phpstorm" use_configuration_file="true" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/apps/symfony/vendor/autoload.php" paratest_path="$PROJECT_DIR$/vendor/bin/paratest_for_phpstorm" />
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/laravel/phpunit.xml" custom_loader_path="$PROJECT_DIR$/laravel/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
